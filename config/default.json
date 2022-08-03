@@ -1,0 +1,5 @@
+{
+  "port": 5000,
+  "1mongoUri": "mongodb+srv://andrii:gkfvz123@cluster0.oagsr.mongodb.net/app?retryWrites=true&w=majority",
+  "mongoUri": "mongodb+srv://andrii:gkfvz123@cluster0.oagsr.mongodb.net/?retryWrites=true&w=majority"
+}

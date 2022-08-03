@@ -1,0 +1,24 @@
+.form-group {
+  .form-control {
+    flex: 1;
+
+    .MuiOutlinedInput-root {
+      padding: 0 !important;
+
+      input {
+        padding: 0;
+      }
+
+      fieldset {
+        border: 0;
+        padding: 0;
+      }
+
+      .MuiAutocomplete-endAdornment {
+        right: 0;
+      }
+    }
+  }
+
+
+}

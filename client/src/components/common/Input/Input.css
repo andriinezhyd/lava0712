@@ -1,0 +1,22 @@
+input {
+    padding: 10px 20px;
+    display: inline-block;
+    border: 1px solid burlywood;
+    background: #fff;
+    color: #303030;
+    border-radius: 4px;
+    transition: background-color 100ms linear, border-color 100ms linear, color 100ms linear, box-shadow 100ms linear;
+    white-space: nowrap;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input:hover,
+input:focus-visible,
+input:focus {
+    box-shadow: inset 0 0 0 2px tan, 0 2px 2px 0 rgb(0 0 0 / 8%);
+    outline-color: tan;
+}
