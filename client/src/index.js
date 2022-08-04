@@ -13,9 +13,9 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="sales" element={<Sales />} />
-        <Route path="products" element={<Products />} />
-        <Route path="payments" element={<Payments />} />
+        <Route path="/sales" element={<Sales />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/payments" element={<Payments />} />
       </Routes>
     </BrowserRouter>
 );
