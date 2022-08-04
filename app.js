@@ -3,14 +3,12 @@ import express from "express"
 import mongoose from "mongoose"
 import router from "./routes/sale.routes.js";
 import cors from "cors";
-import path from "path"
 
 const app = express()
 const PORT = process.env.PORT || config.get("port") || 5000
 
 app.use(express.json())
 app.use(cors())
-app.use(express.static(path.join(__dirname, 'build')));
 
 app.get("/", (req, res) => {
   res.end("<div><ul><li><a href='/'>Home</a></li><li><a href='/about'>About</a></li></ul><h1>Home page</h1></div>")
