@@ -6,7 +6,7 @@
   "type": "module",
   "proxy": "http://localhost:5000",
   "scripts": {
-    "start": "node app",
+    "start": "node app.js",
     "server": "nodemon app",
     "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
@@ -17,6 +17,7 @@
   "dependencies": {
     "config": "^3.3.7",
     "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "mongoose": "^6.3.2"
   },

@@ -1,12 +1,11 @@
 import config from "config"
 import express from "express"
 import mongoose from "mongoose"
-import Sale from "./models/Sale.js";
 import router from "./routes/sale.routes.js";
 import cors from "cors";
 
 const app = express()
-const PORT = config.get("port") || 5000
+const PORT = process.env.PORT || config.get("port") || 5000
 
 app.use(express.json())
 app.use(cors())
