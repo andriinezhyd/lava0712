@@ -14,11 +14,11 @@ const PORT = process.env.PORT || config.get("port") || 5000
 
 app.use(express.json())
 app.use(cors())
-//app.use(express.static(path.join(__dirname, 'client/build')));
+app.use(express.static(path.join(__dirname, 'client/build')));
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, 'client/build/index.html'))
-})
+app.get('/*', function (req, res) {
+  res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+});
 // app.get("/", (req, res) => {
 //   res.end("<div><ul><li><a href='/'>Home</a></li><li><a href='/about'>About</a></li></ul><h1>Home page</h1></div>")
 // })
