@@ -4,7 +4,7 @@ import mongoose from "mongoose"
 import router from "./routes/sale.routes.js";
 import cors from "cors";
 import path from "path";
-import { fileURLToPath } from 'url';
+import {fileURLToPath} from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -30,12 +30,9 @@ app.get('/*', function (req, res) {
 // app.use("/", router)
 
 
-
 async function start() {
   try {
-    await mongoose.connect(config.get("mongoUri"), {
-
-    })
+    await mongoose.connect(config.get("mongoUri"), {})
     app.listen(PORT, () => {
       console.log(`Server has been started on port ${PORT}...`)
     })
